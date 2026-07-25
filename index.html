@@ -17,22 +17,141 @@
       <main>
         <div class="main-container">
           <div class="back">
-            <img src="./assets/icons/arrow-left-02.svg" alt="">
+            <img src="./assets/icons/arrow-left-02.svg" alt="" />
             <span>Voltar</span>
           </div>
           <h1>Formulário de Matricula</h1>
-          <span>Preencha os dados abaixo para matricular seu filho na escolha educação infantil Estrela do Amanhã.</span>
+          <p>
+            Preencha os dados abaixo para matricular seu filho na escolha
+            educação infantil Estrela do Amanhã.
+          </p>
         </div>
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="chield-info">
+            <legend>Informações da criança</legend>
+            <div class="input-wrapper">
+              <label for="fullname">Nome completo:</label>
+              <input
+                id="fullname"
+                name="fullname"
+                type="text"
+                placeholder="Nome completo da criança"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth"></label>Data de nascimento:<input
+                type="date"
+                id="birth"
+                name="birth"
+                lang="pt-BR"
+              />
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select id="gender" name="gender">
+                Masculino
+                <option value="female">Feminino</option>
+                <option value="male">Masculino</option>
+                <option value="na">Prefiro não responder</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="medical-info">Informações médica:</label>
+              <textarea
+                name="medical-info"
+                id="medical-info"
+                placeholder="A criança possuí alguma condição médica que a escola deve estar ciente?"
+                cols="30"
+                rows="06"
+              >
+              </textarea>
+            </div>
+
+            <div class="droparea-wrapper">
+              <label for="birth-file">Certidão de Nascimento</label>
+              <div class="dropzone">
+                <input type="file" id="birth-file" name="birth-file" />
+                <img src="./assets/icons/cloud-upload.svg" alt="" />
+                <p>
+                  Clique aqui para <br />
+                  selecionar o arquivos.
+                </p>
+              </div>
+            </div>
+          </fieldset>
+
+          <field class="address">
+            <legend>Endereço residencial</legend>
+
+            <div class="input-wrapper">
+              <label for="cep">CEP</label>
+              <input type="text" id="cep" name="cep" />
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper flex-1">
+                <label for="rua">Rua</label>
+                <input
+                  type="text"
+                  id="rua"
+                  name="rua"
+                  value="Rua Zeferino"
+                  disabled
+                />
+              </div>
+
+              <div class="input-wrapper flex-2">
+                <label for="numero">Número</label>
+                <input
+                  type="number"
+                  id="numero"
+                  name="numero"
+                  value="rua zeferino"
+                />
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper flex-1">
+                <label for="cidade">Cidade</label>
+                <input
+                  type="text"
+                  id="cidade"
+                  name="cidade"
+                  value="Recife"
+                  disabled
+                />
+              </div>
+
+              <div class="input-wrapper flex-2">
+                <label for="estado">Estado</label>
+                <input
+                  type="text"
+                  id="estado"
+                  name="estado"
+                  value="PE"
+                  disabled
+                />
+              </div>
+            </div>
+          </field>
+        </form>
       </main>
 
       <aside>
         <div class="aside-container">
           <header>
-            <img src="./assets/logo.svg" alt="">
+            <img src="./assets/logo.svg" alt="" />
             <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
-            <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+            <p>
+              Inscreva seu filho em nossa escola e veja-o florescer em um
+              ambiente acolhedor, seguro e estimulante.
+            </p>
           </header>
-          <img src="./assets/Illustration.svg">
+          <img src="./assets/Illustration.svg" />
         </div>
       </aside>
     </div>
