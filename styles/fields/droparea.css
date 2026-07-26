@@ -1,5 +1,6 @@
 .dropzone {
-  border: 1px dashed var(--stroke-default);
+  border: 2px dashed transparent;
+  outline: 1px dashed var(--stroke-default);
   display: grid;
   justify-items: center;
   gap: .5rem;
@@ -19,9 +20,9 @@
     color: #a8a29e;
   }
 
-  &:hover {
-    border-width: 2px;
-    border-color: var(--stroke-hightlight);
+  &:hover, &:has(input:focus) {
+    outline-width: 0;
+    border-color: var(--stroke-highlight);
     background-color: var(--surface-secondary);
 
     & p {
